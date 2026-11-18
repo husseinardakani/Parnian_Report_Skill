@@ -1,0 +1,37 @@
+{
+  "sources": [
+    {
+      "repository": "https://github.com/microsoft/skills-for-fabric",
+      "revision": "e31422e7d1045ef3a0906df9ff5991f2338af010",
+      "license": "MIT",
+      "status": "install",
+      "skills": ["skills/semantic-model-authoring", "skills/powerbi-report-cli"],
+      "support": ["common", "LICENSE"],
+      "requirements": "Git for pinned downloads. Local planning needs only the skill files. Desktop preview, Fabric API operations and MCP capabilities require separate tools, permissions and configuration as applicable."
+    },
+    {
+      "repository": "https://github.com/pbi-agent/skills",
+      "revision": "eb1a0dfeaaa25d4ac2ad538d27fff8ffbbe8abca",
+      "license": "No license located in the reviewed tree",
+      "status": "skip",
+      "skills": ["skills/powerbi-audit", "skills/powerbi"],
+      "requirements": "Validate local PBIP/TMDL compatibility and usage rights. The audit writes local Markdown tracking files."
+    },
+    {
+      "repository": "https://github.com/anthropics/skills",
+      "revision": "e4bb5d960d87126ff3b3a8af1a104b7db67560ba",
+      "license": "Apache-2.0 for the reviewed PDF and XLSX folders",
+      "status": "skip",
+      "skills": ["skills/pdf", "skills/xlsx"],
+      "requirements": "Existing Codex PDF and spreadsheet skills cover this environment. A separate reviewed install may be needed when those capabilities are absent. Generation tools vary by workflow."
+    },
+    {
+      "repository": "https://github.com/microsoft/powerbi-modeling-mcp",
+      "revision": "caed9d3fcffd319a6820567890d833e120bb8f32",
+      "license": "MIT",
+      "status": "separate-mcp",
+      "skills": [],
+      "requirements": "Compatible MCP client and, for NPX, Node.js. Local Desktop requires access to the model on its host. Fabric connections require authorized identities and endpoints."
+    }
+  ]
+}
